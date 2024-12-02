@@ -1,0 +1,48 @@
+<!-- shift! -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signature</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="main">
+      <div class="top">
+        <div class="block">
+          <p>Text color Picker</p>
+          <input type="color" class="formPicker" id="colorPicker" />
+        </div>
+        <div class="block">
+          <p>background color Picker</p>
+          <input type="color" class="formPicker" id="canvasColor" />
+        </div>
+        <div class="block">
+          <p>Change Font Size</p>
+          <select id="fontPicker">
+            <option value="5">5px</option>
+            <option value="10">10px</option>
+            <option value="15">15px</option>
+            <option value="20">20px</option>
+            <option value="30">30px</option>
+          </select>
+        </div>
+      </div>
+      <canvas class="canva" width="500" height="500" id="mycanvas"></canvas>
+      <div class="bottom">
+        <button class="btn btn-danger" id="clear-btn">Clear</button>
+        <button class="btn btn-success" id="save-btn">Save & download</button>
+        <button class="btn btn-warning" id="retrieve-btn">Retrieve</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
